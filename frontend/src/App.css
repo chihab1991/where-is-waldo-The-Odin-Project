@@ -1,0 +1,159 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* header */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header nav a {
+  color: #e2e2e2;
+}
+
+header nav a:hover {
+  color: #e2e2e2;
+  text-decoration: underline;
+  transition-duration: 250ms;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* image container */
+.img-container img {
+  display: inline-block;
+  width: 7em;
+  height: 7em;
+  margin-right: 1rem;
+}
+
+.btn-start {
+  background-color: #2f8a3e;
+}
+
+.game-one {
+  width: 500px;
+  height: 500px;
+  background-color: aliceblue;
+}
+
+/* modal */
+.modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.modal img {
+  width: 120px;
+  height: 120px;
+  margin: 2rem;
+}
+
+.modal-box {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem 2rem;
+}
+
+.clicked-modal {
+  position: absolute;
+  background-color: #242424;
+}
+
+.clicked-modal ul {
+  padding: 0;
+  margin: 0;
+}
+
+.clicked-modal li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: .8rem 1rem;
+  cursor: pointer;
+}
+
+.clicked-modal li:hover {
+  background-color: #303030;
+}
+
+.clicked-modal img {
+  /* display: block; */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: .8rem;
+}
+
+/* scoreboard */
+.scoreboard>div {
+  border-bottom: 1px solid #888;
+  display: flex;
+  padding: .5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.scoreboard>div:nth-child(even) {
+  background-color: #303030;
+}
+
+.scoreboard p {
+  margin: 0;
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  font-weight: 500;
+  width: 300px;
+  text-align: left;
+}
